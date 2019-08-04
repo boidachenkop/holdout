@@ -1,0 +1,25 @@
+Author: Pavlo Boidachenko
+
+Description:
+    Small Python script for performing holdout(dividing
+    dataset on test and train parts) for LIBSVM dataset format.
+    Script has guarantee that class ratio will be the same in train
+    and test parts.
+
+    Warning: there is no check for correctness your dataset file.
+    Warning: script assumes that your classes is a first column
+
+Usage:
+    python3 h4c.py dataset percent_on_test train_part test_part
+
+    dataset - input dataset in libsvm format
+    percent_on_test - how much percent from dataset you divide for testing. 
+    train_part - output file will contain training part
+    test_part - output file will contain testing part
+
+Algorithm:
+    Script devides dataset by classes than takes random lines from
+    each class and puts them into training and testing files. Ratio
+    beetween test and train parts is defined by user. 
+
+
