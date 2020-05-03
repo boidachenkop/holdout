@@ -23,7 +23,8 @@ Usage:
 Algorithm:
     Classification Script devides dataset by classes than takes random lines from
     each class and puts them into training and testing files. Ratio
-    beetween test and train parts is defined by user. 
+    beetween test and train parts is defined by user. Basically classification script
+    tries to save class ratio in test dataset. 
     Regression Script randomizes dataset and puts coresponding parts into train_part
     and test_part.
 
